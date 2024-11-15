@@ -1,0 +1,48 @@
+
+
+show alg;
+
+
+while(!correct_answer(alg)){
+
+	print "Это неправильный ответ, попробуйте ещё раз";Ц
+	show alg;
+
+}
+
+var array_alg = array_answer(alg);
+
+var i = 0;
+var slide_name = " ";
+while (i < options_count(alg)){
+	var a = array_alg[i];
+	if(a == 1){
+		show_slide(values_slide(alg, i));
+		if(correct_answer(values_slide(alg, i)) == true){
+			
+			print "Выполнено верно!";
+		} 
+		
+		
+		
+		if(options_count(values_slide(alg, i))>0){
+		
+				var j = 0;
+				var array_sl = array_answer(values_slide(alg, i));
+				while(j < options_count(values_slide(alg, i))){
+						if(array_sl[j] == 1){
+							show_slide(values_slide(values_slide(alg, i), j));
+						
+						}
+						
+						j = j + 1;
+				}
+		}
+	
+	}
+	i=i+1;
+}
+
+
+
+

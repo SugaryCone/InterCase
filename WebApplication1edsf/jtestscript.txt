@@ -1,0 +1,3 @@
+show greatings;
+show captcha;
+show select;

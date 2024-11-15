@@ -1,0 +1,63 @@
+[
+{
+    "var": "select",
+    "type": "selslide",
+    "title": "Демонстрация слайда алгоритма действий",
+    "content": "Выберете необходимые для выполнения пункты",
+    "options": [
+      "Анамнез жизни",
+      "Анамнез болезни",
+      "Предварительный диагноз",
+      "Майонез"
+    ],
+    "correct_choice": [
+      1,
+      1,
+      1, 0
+    ],
+    "values": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+
+},
+  {
+    "var": "s1",
+    "type": "slide",
+    "title": "Анамнез болезни",
+    "content": "Здесь присутствует только текст и медиа по теме <img src=\"/photo_2024-03-03_10-43-32.jpg\" class=\"img-fluid\" alt=\"...\">"
+  },
+  {
+    "var": "captcha",
+    "type": "dislide",
+    "title": "Анамнез болезни",
+    "content": "Здесь",
+    "answer": 0,
+    "values": [
+      "empty",
+      "empty"
+    ]
+  },
+  {
+    "var": "select",
+    "type": "selslide",
+    "title": "Анамнез болезни",
+    "content": "Здесь",
+    "options": [
+      "nicee",
+      "niceee",
+      "niceeee"
+    ],
+    "correct_choice": [
+      1,
+      1,
+      1
+    ],
+    "values": [
+      "d1",
+      "d2",
+      "d3"
+    ]
+  }
+]
